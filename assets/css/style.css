@@ -1,11 +1,10 @@
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 body {
-  /* more on this crazy alphanumerical value in a minute! */
   color: #39a6b2;
   font-family: Helvetica, Arial, sans-serif;
 }
@@ -87,12 +86,23 @@ section {
   flex-wrap: wrap;
 }
 
-.hero-secondary {
-  
+.hero-cta {
+  width: 35%;
+  text-align: right;
+  margin: 3.5%;
+  color: #fff;
+  font-size: 18px;
+  line-height: 1.3;
+}
+
+.hero-cta h2 {
+  font-style: italic;
+  font-size: 55px;
+  color: #fce138;
 }
 
 .hero-form {
-  border: solid 3px #024e76;
+  border: 3px solid #024e76;
   background-color: #fce138;
   padding: 20px;
   color: #024e76;
@@ -120,7 +130,7 @@ section {
 }
 
 .hero-form label {
-  margin: 05px;
+  margin: 0 5px;
 }
 
 .hero-form button {
@@ -131,22 +141,25 @@ section {
   font-size:16px;
 }
 
-.hero-cta {
-  width: 35%;
-  text-align: right;
-  margin: 3.5%;
-  color: #fff;
-  font-size: 18px;
-  line-height: 1.3;
-}
-
-.hero-cta h2 {
-  font-style: italic;
-  font-size: 55px;
-  color: #fce138;
-}
 /*heros style end */
 
+.section-title {
+  font-size: 55px;
+  color: #024e76;
+  border-bottom: 3px solid;
+  padding-bottom: 20px;
+  text-align: center;
+  margin: 0 auto 35px auto;
+  width: 50%;
+}
+
+.primary-border {
+  border-color: #fce138;
+}
+
+.secondary-border {
+  border-color: #39a6b2;
+}
 
 .intro p {
   margin: 0 auto;
@@ -161,23 +174,6 @@ section {
   background: #fce138;
 }
 
-.section-title {
-  font-size: 55px;
-  color: #024e76;
-  border-bottom: 3px solid;
-  padding-bottom: 20px;
-  text-align: center;
-  margin: 0 auto 35px auto;
-}
-
-.primary-border {
-  border-color: #fce138;
-}
-
-.secondary-border {
-  border-color: #39a6b2;
-}
-
 .step {
   margin: 50px auto;
   padding-bottom: 50px;
@@ -189,32 +185,17 @@ section {
   justify-content: space-between;
 }
 
-.step-info {
-  flex: 2 70%;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-}
-
 .step h3 {
   color: #024e76;
   font-size: 46px;
   flex: 1 30%;
 }
 
-.steps p {
-  color: #39a6b2;
-  font-size: 23px;
-}
-
-.step-text {
-  flex: 12;
-}
-
-.step-text h4 {
-  font-size: 26px;
-  line-height: 1.5;
-  color: #024e76;
+.step-info {
+  flex: 2 70%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 .step-img {
@@ -226,8 +207,27 @@ section {
   max-width: 100%;
 }
 
-.trainers {
+.step-text {
+  flex: 12;
+}
 
+.step-text p {
+  color: #39a6b2;
+  font-size: 18px;
+}
+
+.step-text h4 {
+  font-size: 26px;
+  line-height: 1.5;
+  color: #024e76;
+}
+
+.trainers {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .trainer {
